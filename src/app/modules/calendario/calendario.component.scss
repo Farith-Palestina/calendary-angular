@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar {
+  background: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 80%;
+
+  &_info {
+    background-color: darkcyan;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0rem 2rem;
+    font-size: 1.4rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+
+  &_prev {
+    width: 2rem;
+    height: 2rem;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23000000" width="2rem" height="2rem" viewBox="-8.5 0 32 32" version="1.1"><title>next</title><path d="M0 24.781v-17.594l15.281 8.813z"/></svg>');
+    transform: rotate(180deg);
+  }
+
+  &_next {
+    width: 2rem;
+    height: 2rem;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23000000" width="2rem" height="2rem" viewBox="-8.5 0 32 32" version="1.1"><title>next</title><path d="M0 24.781v-17.594l15.281 8.813z"/></svg>');
+  }
+
+  &_data{
+    display: flex;
+    flex-direction: row;
+  }
+
+  &_week, &_dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 1rem;
+    margin: 1rem 0rem;
+  }
+
+  &_item{
+    text-align: center;
+    line-height: 2;
+  }
+
+  &_month, &_year{
+    padding: 0.5rem 1rem;
+  }
+}

@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="calendar">
+    <div class="calendar_info">
+      <div class="calendar_prev" #prevMonth (click)="lastMonthChange()"></div>
+      <div class="calendar_data">
+        <div class="calendar_month" #month></div>
+        <div class="calendar_year" #year>2024</div>
+      </div>
+      <div class="calendar_next" #nextMonth (click)="nextMonthChange()"></div>
+    </div>
+    <div class="calendar_week">
+      <div class="calendar_day calendar_item">L</div>
+      <div class="calendar_day calendar_item">M</div>
+      <div class="calendar_day calendar_item">M</div>
+      <div class="calendar_day calendar_item">J</div>
+      <div class="calendar_day calendar_item">V</div>
+      <div class="calendar_day calendar_item">S</div>
+      <div class="calendar_day calendar_item">D</div>
+    </div>
+    <div class="calendar_dates" #dates></div>
+  </div>
+</div>
